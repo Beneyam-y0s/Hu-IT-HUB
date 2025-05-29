@@ -1,0 +1,401 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>News  HTML-5 Template </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/event.css">
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <!-- first head -->
+    <div class="header-mid">
+        <div class="container">
+            <div class="mid-row" style="padding: 0;">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html"><h1>IT-HUB</h1></a>
+                </div>
+                
+                <!-- Hamburger Menu Button -->
+                <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <nav class="first-nav-bar">                  
+                    <ul id="first-navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="event.html">Event</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav> 
+            </div>
+        </div>
+    </div>
+    
+    <!-- last header -->
+    <div class="header-bottom">
+        <div class="bottom-row">
+            <!-- Main-menu -->
+            <nav class="nav-bar">                  
+                <ul id="navigation">
+                    <li><a href="#courses">Course</a></li>
+                    <li><a href="#dicovers">Discover</a></li>
+                    <li><a href="#events">Top Event</a></li>
+                    <li><a href="#newss"> Latest News</a></li>
+                    <li><a href="#course">Contact</a></li>
+                </ul>
+            </nav>            
+            <div class="header-right">
+                <!-- Heder social -->
+                <ul class="social-links">    
+                    <li><a href="https://www.fb.com/sai4ull"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li> <a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tech conference attendees networking" class="hero-image">
+        <div class="hero-container">
+            <div class="hero-content animate-fade">
+                <h1>Upcoming Tech Events</h1>
+                <p>Discover the most anticipated technology gatherings of the year. Network with industry leaders and gain cutting-edge knowledge.</p>
+                <div class="hero-cta">
+                    <a href="form.html" class="wtn wtn-primary">Register Now</a>
+                    <a href="#" class="wtn wtn-secondary">View Schedule</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Countdown Banner -->
+    <div class="countdown-banner animate-fade delay-1">
+        <h3>Early bird registration ends soon! Save 20% on all conference passes</h3>
+        <div class="countdown-timer" id="countdown">
+            <div class="countdown-item">
+                <div class="countdown-value" id="days">07</div>
+                <div class="countdown-label">Days</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-value" id="hours">23</div>
+                <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-value" id="minutes">59</div>
+                <div class="countdown-label">Minutes</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-value" id="seconds">59</div>
+                <div class="countdown-label">Seconds</div>
+            </div>
+        </div>
+    </div>
+
+    <section id="elvents" class="events-section">
+        <div class="container">
+            <div class="events-controls animate__animated animate__fadeIn animate__delay-1s">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="event-search" placeholder="Search events by name, location or date..." aria-label="Search events">
+                    <button class="clear-search" aria-label="Clear search">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="events-tabs animate__animated animate__fadeIn animate__delay-2s">
+                    <div class="tabs-header">
+                        <button id="upcoming_btn" class="tab-btn active" data-tab="upcoming" aria-label="Upcoming events">
+                            <i class="fas fa-calendar-alt"></i> Upcoming Events
+                        </button>
+                        <button id="past_btn" class="tab-btn" data-tab="past" aria-label="Past events">
+                            <i class="fas fa-history"></i> Past Events
+                        </button>
+                    </div>
+                    <div class="tabs-content" id="upcoming">
+                        <div class="tab-pane active">           
+                            <article class="event-card">
+                                <div class="event-date1">
+                                    <span class="event-day">15</span>
+                                    <span class="event-month">Jul</span>
+                                </div>
+                                <div class="event-content">
+                                    <h3 class="event-title">Future of AI Summit 2023</h3>
+                                    <div class="event-meta">
+                                        <span class="event-location"><i class="fas fa-map-marker-alt"></i> San Francisco, CA</span>
+                                        <span class="event-time"><i class="fas fa-clock"></i> 9:00 AM - 5:00 PM</span>
+                                    </div>      
+                                    <p class="event-description">Explore the latest advancements in artificial intelligence with leading researchers and industry pioneers. Includes hands-on workshops on machine learning applications.</p>
+                                    <a href="events/ai-summit-2023.html" class="event-cta">Register Now</a>
+                                </div>
+                            </article>
+                            <br>
+                            <article class="event-card">
+                                <div class="event-date1">
+                                    <span class="event-day">22</span>
+                                    <span class="event-month">Aug</span>
+                                </div>
+                                <div class="event-content">
+                                    <h3 class="event-title">Global Hackathon Challenge</h3>
+                                    <div class="event-meta">
+                                        <span class="event-location"><i class="fas fa-map-marker-alt"></i> Virtual Event</span>
+                                        <span class="event-time"><i class="fas fa-clock"></i> 48-hour competition</span>
+                                    </div>      
+                                    <p class="event-description">Join developers worldwide in this intensive coding competition. $50,000 in prizes across categories including sustainability, healthcare, and fintech solutions.</p>
+                                    <a href="events/global-hackathon.html" class="event-cta">Register Now</a>
+                                </div>
+                            </article>
+                            <br>
+                            <article class="event-card">
+                                <div class="event-date1">
+                                    <span class="event-day">05</span>
+                                    <span class="event-month">Sep</span>
+                                </div>
+                                <div class="event-content">
+                                    <h3 class="event-title">Tech Career Expo</h3>
+                                    <div class="event-meta">
+                                        <span class="event-location"><i class="fas fa-map-marker-alt"></i> New York, NY</span>
+                                        <span class="event-time"><i class="fas fa-clock"></i> 10:00 AM - 4:00 PM</span>
+                                    </div>      
+                                    <p class="event-description">Connect with top tech employers hiring for software engineering, data science, UX design, and product management roles. Resume reviews and mock interviews available.</p>
+                                    <a href="events/tech-career-expo.html" class="event-cta">Register Now</a>
+                                </div>
+                            </article>
+                            <br>
+                            <article class="event-card">
+                                <div class="event-date1">
+                                    <span class="event-day">18</span>
+                                    <span class="event-month">Oct</span>
+                                </div>
+                                <div class="event-content">
+                                    <h3 class="event-title">Web3 Developers Conference</h3>
+                                    <div class="event-meta">
+                                        <span class="event-location"><i class="fas fa-map-marker-alt"></i> Austin, TX</span>
+                                        <span class="event-time"><i class="fas fa-clock"></i> 8:30 AM - 7:00 PM</span>
+                                    </div>      
+                                    <p class="event-description">Deep dive into blockchain, decentralized applications, and the future of the internet. Includes coding sessions with Ethereum and Solana experts.</p>
+                                    <a href="events/web3-conference.html" class="event-cta">Register Now</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="past">
+                        <article class="event-card">
+                            <div class="event-date1">
+                                <span class="event-day">12</span>
+                                <span class="event-month">May</span>
+                            </div>
+                            <div class="event-content">
+                                <h3 class="event-title">Cloud Infrastructure Summit</h3>
+                                <div class="event-meta">
+                                    <span class="event-location"><i class="fas fa-map-marker-alt"></i> Seattle, WA</span>
+                                    <span class="event-time"><i class="fas fa-clock"></i> 9:00 AM - 5:00 PM</span>
+                                </div>      
+                                <p class="event-description">Explored the latest in cloud computing architectures, serverless technologies, and multi-cloud strategies with AWS, Google Cloud, and Azure experts.</p>
+                                <a href="events/cloud-summit-recap.html" class="event-cta">View Recap</a>
+                            </div>
+                        </article>
+                        <br>
+                        <article class="event-card">
+                            <div class="event-date1">
+                                <span class="event-day">28</span>
+                                <span class="event-month">Mar</span>
+                            </div>
+                            <div class="event-content">
+                                <h3 class="event-title">Women in Tech Symposium</h3>
+                                <div class="event-meta">
+                                    <span class="event-location"><i class="fas fa-map-marker-alt"></i> Chicago, IL</span>
+                                    <span class="event-time"><i class="fas fa-clock"></i> 8:00 AM - 6:00 PM</span>
+                                </div>      
+                                <p class="event-description">Celebrated women leaders in technology with keynote speeches, panel discussions, and mentorship sessions focused on career growth in STEM fields.</p>
+                                <a href="events/women-in-tech-recap.html" class="event-cta">View Recap</a>
+                            </div>
+                        </article>
+                        <br>
+                        <article class="event-card">
+                            <div class="event-date1">
+                                <span class="event-day">15</span>
+                                <span class="event-month">Feb</span>
+                            </div>
+                            <div class="event-content">
+                                <h3 class="event-title">Startup Pitch Competition</h3>
+                                <div class="event-meta">
+                                    <span class="event-location"><i class="fas fa-map-marker-alt"></i> Boston, MA</span>
+                                    <span class="event-time"><i class="fas fa-clock"></i> 1:00 PM - 5:00 PM</span>
+                                </div>      
+                                <p class="event-description">Early-stage tech startups presented to a panel of venture capitalists and angel investors, with $100,000 in funding awarded to winners.</p>
+                                <a href="events/pitch-competition-recap.html" class="event-cta">View Recap</a>
+                            </div>
+                        </article>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Recent Events Grid -->
+    <section class="recent-news-section" aria-labelledby="recent-news-heading">
+        <div class="news-grid container">
+            <article class="news-card" data-category="development">
+                <figure class="news-image">
+                    <img src="Assets/python.jpg" alt="JavaScript update" width="400" height="225" loading="lazy">
+                </figure>
+                <div class="news-content">
+                    <div class="news-meta">
+                        <span class="news-category">Programming</span>
+                        <time datetime="2023-06-11">June 11, 2023</time>
+                    </div>
+                    <h3 class="news-title">ECMAScript 2023 Features Now Available</h3>
+                    <p class="news-excerpt">The latest JavaScript update brings new array methods and quality-of-life improvements.</p>
+                    <a href="news/ecmascript-2023.html" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="Development">
+                <figure class="news-image">
+                    <img src="Assets/chatbot.jpg" alt="React 19 beta release" width="400" height="225" loading="lazy">
+                </figure>
+                <div class="news-content">
+                    <div class="news-meta">
+                        <span class="news-category">Web Development</span>
+                        <time datetime="2023-06-15">June 15, 2023</time>
+                    </div>
+                    <h3 class="news-title">React 19 Beta Introduces Compiler Optimizations</h3>
+                    <p class="news-excerpt">The upcoming release reduces re-renders by 40% and introduces new server component patterns.</p>
+                    <a href="news/react-19-beta.html" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="security">
+                <figure class="news-image">
+                    <img src="Assets/photo_2025-05-29_16-58-07.jpg" alt="Ransomware attack on hospitals" width="400" height="225" loading="lazy">
+                </figure>
+                <div class="news-content">
+                    <div class="news-meta">
+                        <span class="news-category">Cybersecurity</span>
+                        <time datetime="2023-06-14">June 14, 2023</time>
+                    </div>
+                    <h3 class="news-title">Global Ransomware Attack Targets Healthcare Systems</h3>
+                    <p class="news-excerpt">Hospitals in multiple countries report disruptions as a new ransomware strain exploits unpatched VPN vulnerabilities.</p>
+                    <a href="news/healthcare-ransomware.html" class="read-more">Read More</a>
+                </div>
+            </article>              
+        </div>
+    </section>
+
+<script src="event.js"></script>
+
+    </section>
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container">
+                <div class="row" style="width: 100px;">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget" style="width: 250px;">
+                            <h3 class="title">Get in Touch</h3>
+                            <div class="contact-info">
+                                <p><i class="fa fa-map-marker"></i>Haramaya, Ethiopia</p>
+                                <p><i class="fa fa-envelope"></i>huit@haramaya.edu.et</p>
+                                <p><i class="fa fa-phone"></i>+251934543296</p>
+                                <div class="social">
+                                    <a href="https://freewebsitecode.com/"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://facebook.com/freewebsitecode/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://freewebsitecode.com/"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://freewebsitecode.com/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/channel/UC9HlQRmKgG3jeVD_fBxj1Pw/videos"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget" style="width: 250px;">
+                            <h3 class="title">Useful Links</h3>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="news.html">News</a></li>
+                                <li><a href="event.html">Event</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget" style="width: 250px;">
+                            <h3 class="title">Quick Links</h3>
+                            <ul>
+                                <li><a href="#">Latest News</a></li>
+                                <li><a href="#">Top Event</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">subscribe</a></li>
+                                <li><a href="#">Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget" style="width: 250px;">
+                            <h3 class="title">Newsletter</h3>
+                            <div class="newsletter">
+                                <p>
+                                    Stay ahead of the curve! Subscribe to our newsletter for exclusive insights, the latest updates on groundbreaking innovations.</p>
+                                <form>
+                                    <input class="form-control" type="email" placeholder="Your email here">
+                                    <button class="btn">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Footer Menu Start -->
+        <div class="footer-menu">
+            <div class="container">
+                <div class="f-menu">
+                    <a href="">Terms of use</a>
+                    <a href="">Privacy policy</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="">Accessibility help</a>
+                    <a href="">Advertise with us</a>
+                    <a href="contact.html">Contact us</a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Menu End -->
+
+        <!-- Footer Bottom Start -->
+        <div class="footer-bottom">
+            <div class="cont">
+                <div class="row">
+                    <div class="col-md-6 copyright">
+                        <p>Copyright &copy; <a href="https://freewebsitecode.com/">HU Information Technology</a>. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom End -->
+    </section>
+
+    <script src="javascript/event.js"></script>
+    <script src="javascript/nav.js"></script>
+
+</body>
