@@ -492,7 +492,8 @@ body{
 }
 .home-page-events-content{
     padding: 0 80px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
 }
 
