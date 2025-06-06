@@ -804,6 +804,7 @@ body{
 .insider-container{
     padding: 0px 20px;
     height: auto;
+    width: 350px;
 }
 .col-1-header-include{
     display: block;
