@@ -137,7 +137,7 @@ body{
     width: 90%;
     color: #fff;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%,10%);
     text-align:justify;
@@ -444,7 +444,7 @@ body{
     border: 2px solid #333;
     padding: 10px 20px;
     border-radius: 30px;
-    margin: 80px;
+    margin-right: 185px;
 }
 .home-page-evnt-show-more a:hover{
     background-color: #19567f;
@@ -794,7 +794,7 @@ body{
     display: none;
     }
     .home-page-events-content{
-    padding: 0 50px ;
+    padding: 0 36px ;
     display: flex;
     flex-direction: column;
     gap: 2rem;

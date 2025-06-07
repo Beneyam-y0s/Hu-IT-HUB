@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // If the countdown is finished
         if (diff < 0) {
             clearInterval(countdownInterval);
-            document.querySelector('.countdown-banner h3').textContent = 'Early bird registration has ended!';
+            document.querySelector('.countdown-banner h3').textContent = 'registration has ended!';
             document.getElementById('countdown').style.display = 'none';
         }
     }
