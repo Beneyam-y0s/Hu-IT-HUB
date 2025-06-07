@@ -763,6 +763,12 @@ body{
     flex-direction: column;
     gap: 3rem;
     }
+    .dicover-main-img{
+        display: none;
+    }
+    .dicover-sub-img-2{
+        display: none;
+    }
     .discover-insider{
     padding: 0px 15px;
     margin: 0px 15px;
