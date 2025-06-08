@@ -1106,22 +1106,24 @@ body{
 }
 .main-post-sub-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    width: 900px;
+    width: 700px;
     margin-left: 50px;
+    padding: 0 0 0 100px;
 }
 .main-post-first-flex{
     width: 500px;
 }
 .main-post-second-flex{
-    width: 350px;
+    width: 500px;
     margin: 30px 10px 10px 10px ;
     display: block;
     padding-top: 10px;
 }
 .main-post-side-img{
-    width: 300px;
+    width: 500px;
     padding-bottom: 20px;
     
 }
@@ -1163,7 +1165,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    width: 330px;
+    width: 500px;
     margin-bottom: 20px;
 }
 .main-post-ide-img-content a{
@@ -1197,10 +1199,12 @@ body{
 }
 .top-post-img{
     padding: 0 10px;
-    width: 370px;
+    width: 500px;
 }
 .top-post-img img{
     width: 100%;
+    border-radius: 10px;
+
 }
 .top-post-content-container{
     width: 400px;
@@ -1602,7 +1606,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    width: 982px;
+    width: 280px;
 }
 .another-most-views-section-col-1-img-1 img{
     width: 280px;
@@ -1617,6 +1621,7 @@ body{
 }
 .another-most-views-section-col-2{
     margin-top: 70px;
+    display: none;
 }
 .another-most-views-section-col-2-header{
     margin-bottom: 30px;
