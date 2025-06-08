@@ -27,7 +27,8 @@ body{
 .footer .row{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 50px 200px;
+    gap: 3rem;
+    padding: 0px 100px;
 }
 
 .footer .footer-widget .title {
@@ -129,6 +130,7 @@ body{
     padding: 0 15px;
     border: 1px solid #ffffff;
     border-radius: 4px;
+    outline: none;
 }
 
 .footer .newsletter .btn {
