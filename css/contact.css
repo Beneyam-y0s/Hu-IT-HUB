@@ -94,10 +94,10 @@
     margin: 20px 20px;
 }
 .contact-container-1{
-    width: 351px;
+    width: 331px;
 }
 .contact-container-2{
-    width: 350px;
+    width: 300px;
 }
 .input-container{
     display: block;
@@ -109,7 +109,7 @@
     padding-bottom: 20px;
 }
 .contact-container-2-content{
-    width: 350px;
+    width: 300px;
 }
 .flex-group{
     display: flex;
@@ -146,7 +146,7 @@
     border: 3px solid lightblue;
     border-radius: 10px;
     padding: 30px;
-    width: 350px;
+    width: 300px;
     margin-bottom: 50px;
 }
 .col-c4 .col-c4-1{
@@ -154,7 +154,7 @@
     border: 3px solid lightblue;
     border-radius: 10px;
     padding:20px 30px;
-    width: 350px;
+    width: 300px;
     margin-bottom: 30px;
 }
 .last-contact-section{
