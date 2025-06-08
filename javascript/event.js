@@ -20,36 +20,36 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Set the end date for the countdown (adjust this to your target date)
-    const endDate = new Date();
-    endDate.setDate(endDate.getDate() + 7); // 7 days from now
-    endDate.setHours(23, 59, 59, 0); // Set to 23:59:59
+    
+    const countdownDuration = 7 * 24 * 60 * 60 * 1000;
+
+    
+    const startTime = Date.now();
 
     function updateCountdown() {
-        const now = new Date();
-        const diff = endDate - now;
+        const now = Date.now();
+        const elapsed = now - startTime;
+        const remaining = countdownDuration - elapsed;
 
-        // Calculate days, hours, minutes, seconds
-        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+        
+        if (remaining <= 0) {
+            clearInterval(countdownInterval);
+            document.querySelector('.countdown-banner h3').textContent = 'registration has ended!';
+            document.getElementById('countdown').style.display = 'none';
+            return;
+        }
 
-        // Update the DOM
+        const days = Math.floor(remaining / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((remaining % (1000 * 60)) / 1000);
+
         document.getElementById('days').textContent = days.toString().padStart(2, '0');
         document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
         document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
         document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-
-        // If the countdown is finished
-        if (diff < 0) {
-            clearInterval(countdownInterval);
-            document.querySelector('.countdown-banner h3').textContent = 'registration has ended!';
-            document.getElementById('countdown').style.display = 'none';
-        }
     }
 
-    // Update immediately and then every second
     updateCountdown();
     const countdownInterval = setInterval(updateCountdown, 1000);
 });

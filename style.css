@@ -827,12 +827,13 @@ body{
         display: flex;
         justify-content: end;
         margin-right: 10px;
+
     }
     .home-page-news-row-img img{
         width: 100%;
         border-radius: 10px;
     }
-    .home-page-news-row-para{
+    .home-page-news-row-para {
         margin: 10px 0 20px 0;
     }
     .home-page-news-row-button a{
@@ -864,16 +865,20 @@ body{
     .home-page-news-row-col-2-content{
         display: flex;
         gap: 1rem;
+        margin-top: 30px;
         margin-bottom: 8px;
     }
     .home-page-news-row-col-2-para{
-        width: auto;
+        width: 180px;
+        font-size: 14px;
     }
     .home-page-news-row-col-2-img{
-        width: 200px;
+        width: 150px;
+        height: 100px;
     }
     .home-page-news-row-col-2-img img{
         width: 100%;
+        height: 100%;
         border-radius: 10px;
         overflow-y: hidden;
     }
