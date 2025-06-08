@@ -640,7 +640,7 @@ body{
 .week-col-2{
     display: flex;
     gap: 3rem;
-    width: 500px;
+    width: 350px;
 }
 .week-main-img{
     width: auto;
