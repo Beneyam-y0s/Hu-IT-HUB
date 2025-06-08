@@ -1230,6 +1230,44 @@ body{
         border: 2px solid black;
         border-radius: 30px;
     }
+    
+    .home-page-news-row-col-2{
+        width: 350px;
+    }
+    .home-page-news-row-col-2-content{
+        display: flex;
+        gap: 1rem;
+        margin-top: 30px;
+        margin-bottom: 8px;
+    }
+    .home-page-news-row-col-2-para{
+        width: 180px;
+        font-size: 14px;
+    }
+    .home-page-news-row-col-2-img{
+        width: 150px;
+        height: 100px;
+    }
+    .home-page-news-row-col-2-img img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        overflow-y: hidden;
+    }
+    .home-page-news-row-col-2-txt-content{
+        width: 100px;
+        height: 100px;
+    }
+    .go-to-new-link{
+        margin: 20px 0px 0px 10px;
+    }
+    .go-to-new-link a{
+        text-decoration: none;
+        color: black;
+        padding: 15px 100px;
+        border: 2px solid black;
+        border-radius: 30px;
+    }
         
     /* week message */
     .week-sub-container{

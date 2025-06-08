@@ -141,9 +141,11 @@ body{
 }
 .mini-side-post-img{
     width: 110px;
+    height: 72px;
 }
 .mini-side-post-img img{
     width: 100%;
+    height: 100%;
     border-radius: 10px;
 }
 .mini-side-post-content-container{
@@ -423,9 +425,11 @@ body{
 }
 .popular-news-second-row-content-img{
     width: 100px;
+    height: 75px;
 }
 .popular-news-second-row-content-img img{
     width: 100%;
+    height: 100%;
     border-radius: 50%;
 }
 .popular-news-second-row-content-txt-para p{
@@ -1128,6 +1132,7 @@ body{
     border-radius: 10px;
     
 }
+
 .main-post-title{
     margin-bottom: 15px;
 }
